@@ -1,0 +1,19 @@
+
+public class Cached 
+{
+	
+	public static void main(String[]args)
+	{
+		
+	}
+
+	
+	public class Incremento implements Runnable
+	{
+		@Override
+		public void run()
+		{
+			
+		}
+	}
+}

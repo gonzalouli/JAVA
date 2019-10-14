@@ -1,0 +1,19 @@
+
+public class cuerpoastrofisico {
+
+		private long peso;
+		private float radio;
+		private String[] estado = null;
+		private float radiotraslacion = null;
+		private float velrotacion = null;
+		private float veltraslacion = null;
+		private float potgrav;
+		
+		public cuerpoastrofisico(peso,radio,estado,radiotraslacion,velrotacion,veltraslacion,potgrav) {
+				
+			
+		}
+		
+		
+	
+}

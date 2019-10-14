@@ -1,0 +1,26 @@
+
+public class cuerpoastrofisico {
+
+		private long peso;
+		private float radio;
+		private String[] estado ;
+		private float radiotraslacion;
+		private float velrotacion;
+		private float veltraslacion ;
+		private float potgrav;
+		
+		
+		public cuerpoastrofisico(long peso, float radio, String[] estado, float radiotraslacion, float velrotacion, float veltraslacion, float potgrav) {
+				this.peso=peso;
+				this.radio=radio;
+				this.estado=estado;
+				this.radiotraslacion=radiotraslacion;
+				this.velrotacion=velrotacion;
+				this.veltraslacion=veltraslacion;
+				this.potgrav=potgrav;
+			
+		}
+		
+		
+	
+}

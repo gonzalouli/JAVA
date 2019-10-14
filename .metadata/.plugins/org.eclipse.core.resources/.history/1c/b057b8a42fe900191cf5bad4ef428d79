@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class newtonraphson {
+
+	public static void main(String[] args) {
+			
+		 Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Aproximación => ");
+        double x0 = sc.nextDouble();
+        
+        System.out.println("Número de iteraciones:");
+        int iter = sc.nextInt() + 1;
+	        
+		double xn = x0;
+		double xn1;
+		
+		for(int i=0; i<iter;i++) {
+		
+			if(f(xn) != 0 ) {
+				xn1=xn - f(i)/fp(i);
+				System.out.println("Iteracion: " + i + "    aproximacion: " +xn1);
+				xn = xn1;
+			}
+		}
+			
+		System.out.println("Resultado : " + xn);
+	}
+	
+	static float f(double xn) {
+		return (float) (Math.acos(xn)-Math.pow(xn, 3));
+		
+	}
+	
+	static float fp(double xn) {
+		return (float) (-Math.asin(xn)-3*Math.pow(xn, 2));
+		
+	}
+
+}

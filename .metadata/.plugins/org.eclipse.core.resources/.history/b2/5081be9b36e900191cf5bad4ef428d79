@@ -1,0 +1,33 @@
+import java.util.Random;
+import java.util.Scanner;
+public class intDefinidaMonteCarlo {
+
+	public static void main(String[] args) {
+		
+		 
+		 
+		long exito = 0;
+		long N = 100;
+		double isx;
+		double isy;
+			for(long i=0;i< N;i++){
+				Random  r = new Random(i);
+				isx = r.nextInt();
+				isy = r.nextInt();
+
+				if(isy <= f(isx));
+					exito++;			
+			}
+			
+			System.out.println(exito);
+			System.out.println(N);
+double aprox = exito / N;		
+
+System.out.printf("Integral aproximada: " + aprox );
+	}
+	
+	static float f(double isx) {
+		return (float) Math.sin(isx);
+	}
+
+}

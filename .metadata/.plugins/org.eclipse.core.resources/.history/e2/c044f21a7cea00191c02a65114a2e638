@@ -1,0 +1,13 @@
+
+public class sistemasolar {
+
+	public static void main(String[] args) {
+		System.out.println("Crea 4 objetos planetarios:");
+
+			System.out.print("Luna");
+			damedatos();
+			cuerpoastrofisico luna =new cuerpoastrofisico()
+
+	}
+
+}

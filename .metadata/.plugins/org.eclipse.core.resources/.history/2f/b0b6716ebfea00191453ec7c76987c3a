@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class cuerpoastrofisico {
+
+		private long peso;
+		private double radio;
+		private String estado ;
+		
+		
+		
+		public cuerpoastrofisico(long peso, double radio, String estado) {
+				this.peso=peso;
+				this.radio=radio;
+				this.estado=estado;
+			
+			
+		}
+		
+		public void damedatos() {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("PESO:");
+			peso=sc.nextLong();
+			System.out.println("RADIO:");
+			radio=sc.nextDouble();
+			System.out.println("ESTADO:");
+			estado=sc.next();
+		
+		}
+		
+		public void muestrodatos() {
+			
+			System.out.println(this.getClass().getSimpleName()+"\nPESO =" +this.peso+ "\nRADIO ="+this.radio+"\nESTADO="+this.estado);
+		}
+		
+		
+	
+}
